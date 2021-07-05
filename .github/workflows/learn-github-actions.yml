@@ -1,18 +1,22 @@
-name: learn-github-actions
 on: [push]
 jobs:
-  check-bats-version:
+  First Job:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v2
-      - uses: actions/setup-node@v2
-      - run: npm i
-      - run: npm run test
-      - run: npm run build
-      - id: publish
-      - uses: JS-DevTools/npm-publish@v1
+      - name: Setup Node
+        uses: actions/checkout@v2
+        uses: actions/setup-node@v2
+        run: npm i
+      - name: Run Tests
+        run: npm run test
+      - name: Build TS
+        run: npm run build
+      - name: Publish
+        id: publish
+        uses: JS-DevTools/npm-publish@v1
         with:
           token: ${{ secrets.NPM_KEY }}
           access: 'public'
-      - if: steps.publish.outputs.type == 'none'
+      - name: Check Publish
+        if: steps.publish.outputs.type == 'none'
         run: exit 1
