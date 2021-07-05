@@ -5,10 +5,13 @@
 
 ### Fixed
 
+- 💚 finging the build [[55eabef](https://github.com/destinio/utils/commit/55eabef4ad9a3111b065736927f82a17974a7fbc)]
 - 💚 fixing build [[0118280](https://github.com/destinio/utils/commit/01182808c9cb7e292eb4a276fc19af74ca9b0b4b)]
 
 ### Miscellaneous
 
+-  badge [[85e00fb](https://github.com/destinio/utils/commit/85e00fbd3f321e585b6cd220618fd03cea17269e)]
+-  badge [[5000a66](https://github.com/destinio/utils/commit/5000a66d23bddcdd681bb0b83405622d21070136)]
 - ⚰️ yarn [[21ff5ec](https://github.com/destinio/utils/commit/21ff5ec8d6d4eda7f7a1dd94503d522f2c716d89)]
 - 🚀 new chnage log [[bd007a2](https://github.com/destinio/utils/commit/bd007a26ad09b9a776ae926467270ff126c90c6b)]
 -  badge [[25f668e](https://github.com/destinio/utils/commit/25f668eb903e752113fde6a8007a3ba12cacfbb1)]
