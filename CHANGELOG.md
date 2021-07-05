@@ -1,10 +1,15 @@
 # Changelog
 
-<a name="0.4.3"></a>
-## 0.4.3 (2021-07-05)
+<a name="0.4.4"></a>
+## 0.4.4 (2021-07-05)
+
+### Fixed
+
+- 💚 fixing build [[0118280](https://github.com/destinio/utils/commit/01182808c9cb7e292eb4a276fc19af74ca9b0b4b)]
 
 ### Miscellaneous
 
+- ⚰️ yarn [[21ff5ec](https://github.com/destinio/utils/commit/21ff5ec8d6d4eda7f7a1dd94503d522f2c716d89)]
 - 🚀 new chnage log [[bd007a2](https://github.com/destinio/utils/commit/bd007a26ad09b9a776ae926467270ff126c90c6b)]
 -  badge [[25f668e](https://github.com/destinio/utils/commit/25f668eb903e752113fde6a8007a3ba12cacfbb1)]
 -  badge [[2c7fef2](https://github.com/destinio/utils/commit/2c7fef2b27a52edf30c0db078c6941812619c646)]
