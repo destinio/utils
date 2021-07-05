@@ -3,8 +3,9 @@ jobs:
   First Job:
     runs-on: ubuntu-latest
     steps:
-      - name: Setup Node
+      - name: Check out code
         uses: actions/checkout@v2
+      - name: Setup Node
         uses: actions/setup-node@v2
       - name: Install
         run: npm i
