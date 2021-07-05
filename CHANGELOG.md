@@ -1,7 +1,11 @@
 # Changelog
 
-<a name="0.4.4"></a>
-## 0.4.4 (2021-07-05)
+<a name="0.5.0"></a>
+## 0.5.0 (2021-07-05)
+
+### Added
+
+- ✨ anding cl [[87c1326](https://github.com/destinio/utils/commit/87c1326afab7b3f63204c3ad460b102d92ad13d3)]
 
 ### Fixed
 
