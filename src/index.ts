@@ -1,5 +1,7 @@
-function sayHello() {
-  console.log('Hello there')
+function id(length = 1000000) {
+  return Date.now() + '-' + Math.floor(Math.random() * length)
 }
 
-module.exports = sayHello
+module.exports = {
+  id,
+}
