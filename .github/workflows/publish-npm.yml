@@ -22,4 +22,5 @@ jobs:
           access: 'public'
       - name: Check Publish
         if: steps.publish.outputs.type == 'none'
+        run: echo Update your version number
         run: exit 1
