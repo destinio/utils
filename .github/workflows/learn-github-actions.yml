@@ -15,4 +15,4 @@ jobs:
           token: ${{ secrets.NPM_KEY }}
           access: 'public'
       - if: steps.publish.outputs.type == 'none'
-          run: exit 1
+        run: exit 1
