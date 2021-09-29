@@ -1,25 +1,19 @@
-on: [push]
-name: publish-npm
+name: Publish NPM
+
+on:
+  release:
+    types: [published]
+
 jobs:
-  first-job:
+  build:
     runs-on: ubuntu-latest
     steps:
-      - name: Check out code
-        uses: actions/checkout@v2
-      - name: Setup Node
-        uses: actions/setup-node@v2
-      - name: Install
-        run: yarn
-      - name: Run Tests
-        run: yarn test
-      - name: Build TS
-        run: yarn build
-      - name: Publish
-        id: publish
-        uses: JS-DevTools/npm-publish@v1
-        with:
-          token: ${{ secrets.NPM_KEY }}
-          access: 'public'
-      - name: Check Publish
-        if: steps.publish.outputs.type == 'none'
-        run: echo Update your version number && exit 1
+      - uses: actions/checkout@v1
+      - uses: actions/setup-node@v2
+      - run: yarn install
+      - run: yarn ts
+      - run: npm publish --access public
+        env:
+          NODE_AUTH_TOKEN: ${{secrets.NPM_KEY}}
+# NOTES
+# https://sergiodxa.com/articles/github-actions-npm-publish

@@ -1,12 +1,9 @@
 function id(length = 1000000) {
-  return Date.now() + '-' + Math.floor(Math.random() * length)
+  return Date.now() + '-' + Math.floor(Math.random() * length);
 }
 
 function cl(log: any) {
-  console.log(log)
+  console.log(log);
 }
 
-module.exports = {
-  id,
-  cl,
-}
+export { id, cl };

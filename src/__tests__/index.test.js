@@ -1,6 +1,6 @@
-const { id } = require('../index.ts')
+const { id } = require('../index.ts');
 
 test('it returns an id', () => {
-  const newId = id()
-  expect(newId).toContain('-')
-})
+  const newId = id();
+  expect(newId).toContain('-');
+});
