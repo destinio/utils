@@ -3,7 +3,6 @@
   "version": "0.6.1",
   "description": "Simple Utils",
   "main": "dist/index.js",
-  "type": "module",
   "scripts": {
     "test": "jest src/**/*",
     "build": "tsc"
